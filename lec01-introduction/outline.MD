@@ -4,9 +4,9 @@
 
 ### 课程资源
 - git hub: [课程资源](https://github.com/webturing/AptechJavaCourse201801)
-- [牛客网] (www.nowcoder.com)
-- csdn
-- [AOJ] (oj.ahstu.cc) oj.ahstu.cc
+- [牛客网](www.nowcoder.com)
+- [csdn](https//www.csdn.net)
+- [AOJ](https://oj.ahstu.cc) https://oj.ahstu.cc
 
 ### AOJ的使用和Java提交
 - AOJ使用 注册账号 选择题目  编辑代码 选择语言 提交代码
@@ -29,7 +29,25 @@ public class Main{//主类名必须是Main
 - nextFloat()/nextDouble()
 - next()/nextLine()
 - hasNext()/hasNextInt()/hasNextDouble()/hasNextLine()
-- useDelimeter(pattern)
+- useDelimiter(pattern)
+```
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner cin = new Scanner(System.in);
+		// cin.useDelimiter(",");//ok
+		cin.useDelimiter("\\D+");// better
+		int a = cin.nextInt();
+		int b = cin.nextInt();
+		int max = a;
+		if (b > max) {
+			max = b;
+		}
+		System.out.println(String.format("max=%d", max));
+		cin.close();
+	}
+}
+```
 ### 数学库 java.lang.Math
 - Math.PI/Math.E
 - sqrt(x)/pow(x,y)/log/log10
