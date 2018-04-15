@@ -18,5 +18,22 @@ public class Main{//主类名必须是Main
     }     
 }
 ```
-###
+## Java Using Java Like C
+### 标准输出 System.out(System.err)
+- System.out.println(exp);
+- System.out.print(exp);
+- System.out.printf(FORMAT,expList);
+### 标准输入　java.util.Scanner
+- System.in.read()
+- nextInt()/nextInt(radix)
+- nextFloat()/nextDouble()
+- next()/nextLine()
+- hasNext()/hasNextInt()/hasNextDouble()/hasNextLine()
+- useDelimeter(pattern)
+### 数学库 java.lang.Math
+- Math.PI/Math.E
+- sqrt(x)/pow(x,y)/log/log10
+- sin/cos/tan/atan/asin/acos/hypot(a,b)
+- foor/ceil/round
+- max/min
 
