@@ -11,7 +11,7 @@ public class TestMod {
 		System.out.println(2.0/0.0);//Nan  Inf
 		System.out.println(-10%7);//bug
 		System.out.println(-10.7%3.6);// 1.7ver ok
-		System.out.println();
+	
 	}
 
 }
