@@ -1,4 +1,4 @@
-package p20;
+package lec05am;
 
 public class BitOperations {
     public static void main(String[] args) {

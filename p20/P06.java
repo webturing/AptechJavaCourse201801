@@ -28,7 +28,7 @@ public class P06 {
                     boolean zhouSecond = isLeft(sun, qian) || isLeft(li, qian);
                     boolean liFirst = isLeft(qian, sun);
                     boolean liSecond = isNear(li, sun);
-                    if ((zhouFirst || zhouSecond || liFirst || liSecond) == false)
+                    if (!(zhouFirst || zhouSecond || liFirst || liSecond))
                         System.out.println(String.format("%d%d%d%d%d", zhao,
                                 qian, sun, li, zhou));
                 }
