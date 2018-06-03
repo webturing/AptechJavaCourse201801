@@ -2,14 +2,9 @@ package lec05am;
 
 public class TestTimeMills {
     public static void main(String[] args) {
-        long start = System.currentTimeMillis();
-        int s = 0;
-        for (int i = 0; i < 1000000000; i++) {
-            s = s + i;
-        }
+        long start = System.currentTimeMillis();//1970-1-1 00:00:00
+        System.out.println(start/1000/3600/24);
 
-        long end = System.currentTimeMillis();
-        System.out.println(end - start);
 
     }
 }
