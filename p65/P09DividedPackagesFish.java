@@ -46,7 +46,7 @@ public class P09DividedPackagesFish {
                             for (int e2 = 0; e2 <= 7 - e1; ++e2) {
                                 int h3 = 7 - h1 - h2;
                                 int f3 = 7 - f1 - f2;
-                                if (f3 < f2) continue;
+                                if (f3 < f2) continue;//不重复枚举
                                 int e3 = 7 - e1 - e2;
                                 Point p1 = add(mul(full, f1), mul(half, h1), mul(empty, e1));
                                 Point p2 = add(mul(full, f2), mul(half, h2), mul(empty, e2));

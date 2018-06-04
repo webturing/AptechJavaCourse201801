@@ -10,13 +10,14 @@ import java.util.Arrays;
  * 老五拿到后连同原先的桔子分1/4给老六；老六拿到后连同原先的桔子分1/3给老大”。
  * 结果大家手中的桔子正好一样多。问六兄弟原来手中各有多少桔子？
  */
-public class P08DistributeOrangesB {
+public class T08DistributeOrangesB {
     public static void main(String[] args) {
         int[] a = new int[6];//存放六个儿子原先手中的橘子数目
         int left = 0;//存放下一个儿子得到的橘子数目
         int ave = 420;
         for (int i = 0; i < 6; i++) {
             if (i == 0) {
+
                 a[i] = (ave - ave / 2) * (8 - i) / (8 - i - 1);//第一个儿子的数目,
                 left = a[i] - ave / 2;
             } else {
