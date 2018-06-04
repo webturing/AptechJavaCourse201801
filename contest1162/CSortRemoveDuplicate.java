@@ -4,25 +4,25 @@ import java.util.Arrays;
 
 public class CSortRemoveDuplicate {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		int[] a = { 20, 40, 32, 67, 40, 20, 89, 300, 400, 15 };
-		Arrays.sort(a);
-		int[] b = new int[a.length]; //Êı×éÕ»
-		int j = 0;// j¼ÇÂ¼ÁË¶àÉÙÔªËØ±»´æ´¢½øÈëb
-		System.out.println(Arrays.toString(b));
-		b[j++] = a[0];
-		System.out.println(Arrays.toString(b));
-		for (int i = 1; i < a.length; i++) {
-			if (a[i] != b[j - 1]) {
-				b[j++] = a[i];
-			}
-		}
-		System.out.println(j);
-		System.out.println(Arrays.toString(b));
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        int[] a = {20, 40, 32, 67, 40, 20, 89, 300, 400, 15};
+        Arrays.sort(a);
+        int[] b = new int[a.length]; //ï¿½ï¿½ï¿½ï¿½Õ»
+        int j = 0;// jï¿½ï¿½Â¼ï¿½Ë¶ï¿½ï¿½ï¿½Ôªï¿½Ø±ï¿½ï¿½æ´¢ï¿½ï¿½ï¿½ï¿½b
+        System.out.println(Arrays.toString(b));
+        b[j++] = a[0];
+        System.out.println(Arrays.toString(b));
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] != b[j - 1]) {
+                b[j++] = a[i];
+            }
+        }
+        System.out.println(j);
+        System.out.println(Arrays.toString(b));
 
-	}
+    }
 
 }

@@ -1,7 +1,8 @@
 package lec01am;
 
-public class HelloWorld {// Ö÷ÀàÃû±ØÐëÊÇMain
-	public static void main(String[] args) { // JavaµÄÖ÷·½·¨
-		System.out.println("This is my first c program!"); // ±ê×¼Êä³ö
-	}
+public class HelloWorld {// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Main
+
+    public static void main(String[] args) { // Javaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("This is my first c program!"); // ï¿½ï¿½×¼ï¿½ï¿½ï¿½
+    }
 }
