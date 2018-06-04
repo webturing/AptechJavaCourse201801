@@ -11,11 +11,7 @@ package p65;
 public class P13FourDigitsReverseOrderNumber {
     public static void main(String[] args) {
         for (int n = 1000; n <= 9999 / 9; ++n) {
-            int m = 9 * n;
-            String s = Integer.toString(n);
-            String t = Integer.toString(m);
-            String rs = new StringBuffer(s).reverse().toString();
-            if (rs.equals(t)) {
+            if (Integer.toString(n).equals(Tools.getReverseString(Integer.toString(9 * n)))) {
                 System.out.println("The number satisfied states condition is:" + n);
             }
         }
