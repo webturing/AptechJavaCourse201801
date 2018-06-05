@@ -7,13 +7,13 @@ package p65;
  * 两小时后里程表上出现了一个新的对称数。问该车的速度是多少？新的对称数是多少？
  * <p>
  * 运行结果
- * The new symmetrical number kelometers is:95959.
+ * The new symmetrical number kilometers is:95959.
  * The velocity of the car is:50.00
  */
 public class P14SystemerticalOdograph {
     public static void main(String[] args) {
         int odograph = 95859;
-        for (int speed = 50;/*???*/ ; speed++) {
+        for (int speed = 1;/*???*/ ; speed++) {
             odograph += speed * 2;
             if (Tools.isSysmetric(Integer.toString(odograph))) {
                 System.out.println("The new symmetrical number kilometers is:" + odograph);

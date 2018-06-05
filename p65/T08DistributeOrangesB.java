@@ -17,7 +17,6 @@ public class T08DistributeOrangesB {
         int ave = 420;
         for (int i = 0; i < 6; i++) {
             if (i == 0) {
-
                 a[i] = (ave - ave / 2) * (8 - i) / (8 - i - 1);//第一个儿子的数目,
                 left = a[i] - ave / 2;
             } else {
