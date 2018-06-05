@@ -30,5 +30,28 @@ public class Tools {
         System.out.println(cube(4));
         System.out.println(reverse(1230));
         System.out.println(isSysmetric(121));
+        System.out.println(lcm(3, 5, 7));
     }
+
+    public static int gcd(int a, int b) {
+        return b == 0 ? a : gcd(b, a % b);
+    }
+
+    public static int lcm(int a, int b) {
+        return a / gcd(a, b) * b;
+    }
+
+    public static int lcm(int... args) {
+        if (args.length == 1)
+            return args[0];
+        if (args.length == 2)
+            return args[0] * args[1] / gcd(args[0], args[1]);
+        int s = 1;
+        for (int arg : args) {
+            s = lcm(s, arg);
+        }
+        return s;
+    }
+
+
 }
