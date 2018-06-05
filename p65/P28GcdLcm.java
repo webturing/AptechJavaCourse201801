@@ -29,4 +29,10 @@ public class P28GcdLcm {
     static int lcm(int a, int b) {
         return a / gcd(a, b) * b;
     }
+
+    public static void main(String[] args) {
+        int m = 99, n = 66;
+        System.out.println(gcd(m, n));
+        System.out.println(lcm(m, n));
+    }
 }
