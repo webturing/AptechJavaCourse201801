@@ -13,12 +13,16 @@
      -	无返回值 也不是void
      -	this() //super````
      -  构造函数的重载
-     -  所有字段初始化为该类型的零值(引用类型初始化null)
-####	toString 字符串化方法
-- 覆盖了Object.toString()
-- 权限是public 
-- 返回String
-- @Override标注(annotation)
+-	toString 字符串化方法
+     - 覆盖了Object.toString() 
+```
+    public String toString() {
+                 return getClass().getName() + "@" + Integer.toHexString(hashCode());
+             }
+```
+     - 权限是public 
+     - 返回String
+     - @Override标注(annotation)
 ###	权限：
 -	private 私有权限 仅限本类访问
 -	protected 子类权限 本类和该类的子类都可以访问
