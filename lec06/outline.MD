@@ -1,18 +1,19 @@
 # JAVA Object-Oriented Programming
 ##1.	类和对象(实例instance)
-###a)	存储
-####	静态static
-- 	静态/类字段field
--	静态/类方法 method
-####	成员member   this
-1.	成员字段 field
-2.	成员方法 method
+###	实例化和存储
+*	静态static
+     * 静态/类字段field
+      * 静态/类方法 method
+- 成员member   this
+    - 成员字段 field
+    - 成员方法 method
 ###	OOP
-####	Constructor:
-1.	与类同名 Fraction
-2.	无返回值 也不是void
-3.	this() //super````
-4. 构造函数的重载
+- 构造函数	Constructor:
+     -	与类同名 Fraction
+     -	无返回值 也不是void
+     -	this() //super````
+     -  构造函数的重载
+     -  所有字段初始化为该类型的零值(引用类型初始化null)
 ####	toString 字符串化方法
 - 覆盖了Object.toString()
 - 权限是public 
@@ -30,7 +31,28 @@
 - 直线、圆、线段
 
 ### 分数建模
-- 分数的运算
+- 分数的字段
+    - 成员字段
+        - 分子up
+        - 分母down
+    - 静态常字段
+        - ONE
+        - ZERO
+####分数的方法
+- 构造器
+- 字符串化 toString
+- 化简方法
+- 二元运算
+    -  add
+    -  sub
+    -  mul
+    - div
+    - compareTo
+- 一元运算
+    - 求倒数
+    - 求相反数
+    - 计算浮点近似值
+
 ### 其他
 - 时间类 
 - 日期类
