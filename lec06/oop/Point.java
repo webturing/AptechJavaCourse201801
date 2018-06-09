@@ -19,6 +19,7 @@ public class Point {
         System.out.println(Point.getDistance(p, q));
         System.out.println(p.r());
         System.out.println(q.r());
+        System.out.println(p);
 
     }
 

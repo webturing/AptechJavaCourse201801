@@ -58,7 +58,23 @@
     - 计算浮点近似值
 
 ### 其他
-- 时间类 
+- 时间类 Time24
+    - 字段
+        - hour
+        - minute
+        - second        
+    - 方法
+        - 构造方法
+           - Time24() 00:00:00
+           - Time24(hh)  hh:00:00
+           ...
+        - toString
+            - 24格式   like 20：18：30
+            - AM/PM格式 08:18:30PM
+        - API:
+          - 设置时分秒getXXX/setXXX
+          - 计算 s0+s
+          - s1-s2
 - 日期类
 - 日期时间类
 	
