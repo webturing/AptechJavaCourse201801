@@ -31,14 +31,14 @@ public class Polynomials {
     }
 
     public static void main(String[] args) {
-        Polynomials polynomials = new Polynomials(new int[]{1, 2, 3, 4});
+        Polynomials polynomials = new Polynomials(new int[]{1, 1, 1, 1});
         System.out.println(polynomials.getValue(2));
         System.out.println(polynomials);
         polynomials.resize(10);
         System.out.println(polynomials);
         polynomials.resize(5);
         System.out.println(polynomials);
-        Polynomials polynomials2 = new Polynomials(new int[]{1, 2, 3, 4});
+        Polynomials polynomials2 = new Polynomials(new int[]{1, 1, 1, 1});
         System.out.println(polynomials.add(polynomials2));
         System.out.println(polynomials.substract(polynomials2));
         System.out.println(polynomials.multiply(polynomials2).getValue(10));
@@ -49,7 +49,7 @@ public class Polynomials {
         int[] coeff = new int[(this.index + 1) * (that.index + 1)];
         for (int i = 0; i < this.coefficients.length; i++)
             for (int j = 0; j < that.coefficients.length; j++)
-                coeff[i + j] += this.coefficients[i] + that.coefficients[j];
+                coeff[i + j] += this.coefficients[i] * that.coefficients[j];
         return new Polynomials(coeff);
     }
 
