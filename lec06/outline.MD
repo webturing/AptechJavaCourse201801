@@ -1,5 +1,5 @@
 # JAVA Object-Oriented Programming
-##1.	类和对象(实例instance)
+##1. 类和对象(实例instance)
 ###	实例化和存储
 *	静态static
      * 静态/类字段field
@@ -10,7 +10,7 @@
 ###	OOP
 - 构造函数	Constructor:
      -	与类同名 Fraction
-     -	无返回值 也不是void
+     -	无返回值类型 也不是void
      -	this() //super````
      -  构造函数的重载
 -	toString 字符串化方法
