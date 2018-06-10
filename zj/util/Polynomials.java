@@ -19,19 +19,40 @@ public class Polynomials {
     @Override
     public String toString() {
         StringBuffer buffer = new StringBuffer();
-        buffer.append(coefficients[0]);
-        for (int i = 1; i < coefficients.length; i++) {
+        if (coefficients[0] != 0)
+            buffer.append(coefficients[0]);
+        if (coefficients[1] == 0) ;
+        else if (coefficients[1] == 1)
+            buffer.append("+x");
+        else if (coefficients[1] == -1)
+            buffer.append("-x");
+        else if (coefficients[1] > 0)
+            buffer.append("+" + coefficients[1] + "x");
+        else
+            buffer.append("-" + (-coefficients[1]) + "x");
+
+        for (int i = 2; i < coefficients.length; i++) {
             if (coefficients[i] == 0) continue;
-            if (coefficients[i] > 0)
-                buffer.append(String.format("+%dx^%d", coefficients[i], i));
-            else
-                buffer.append(String.format("-%dx^%d", -coefficients[i], i));
+            if (coefficients[i] > 0) {
+                if (coefficients[i] == 1)
+                    buffer.append(String.format("+x^%d", i));
+                else
+                    buffer.append(String.format("+%dx^%d", coefficients[i], i));
+
+            } else {
+                if (coefficients[i] == -1)
+                    buffer.append(String.format("-x^%d", -i));
+                else
+                    buffer.append(String.format("-%dx^%d", -coefficients[i], i));
+            }
         }
+        if (buffer.charAt(0) == '+')
+            buffer.delete(0, 1);
         return buffer.toString();
     }
 
     public static void main(String[] args) {
-        Polynomials polynomials = new Polynomials(new int[]{1, 1, 1, 1, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9});
+        Polynomials polynomials = new Polynomials(new int[]{0, 1, 1, 1, 9, 9, 1, 0, 9, 9, 9, 9, 9, 9, 9});
         System.out.println(polynomials.getValue(2));
         System.out.println(polynomials);
         polynomials.resize(10);
