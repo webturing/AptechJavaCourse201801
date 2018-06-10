@@ -31,6 +31,7 @@ public class MathTool {
     }
 
     private static boolean fEqual(float x, float y) {
+        /// return x==y;//
         return Math.abs(x - y) <= EPS;
     }
 
